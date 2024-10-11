@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Addition</title>
+    <style>.bc{
+        font-size: 25px;
+        margin: 5px;
+        background-image: linear-gradient(black, rgb(139, 0, 0));
+        color: #fff;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding: 10px;
+        border-radius: 20px;
+    }
+    .bci{
+        font-weight: 900;
+        display: inline;
+        color: red;
+        font-size: 30px;
+    }
+    .c{
+        background-image: linear-gradient(blue,black);
+    }
+    .v{
+        font-weight: 900;
+        display: inline;
+        color: red;
+        font-size: 30px;
+    }
+    </style>
+</head>
+<body>
+    <div class="inner"><input type="text" class="inp" value="" placeholder="INSERT a galli">
+    <button onclick="gali()">Start</button></div>
+    <div class="gli">
+        <div class="bc">Utkarsh is a <div class="bci"></div>
+    </div></div>
+    <div class="bc c">We are not Responsible for any abuse <div class="bci v">Be a good person</div>
+    <script>
+        let inp = document.querySelector(".inp")
+        let inner = document.querySelector(".inner")
+        let bc = document.querySelector(".bc")
+        let bci = document.querySelector(".bci")
+        let c = document.querySelector(".c")
+        c.style.display ="none"
+        function gali() {
+            c.style.display =""
+            let gali = inp.value
+            bci.innerHTML=gali
+
+            inner.style.display ="none"
+
+            bc.style.display=""
+        }
+        bc.style.display="none"
+    </script>
+</body>
+</html>
